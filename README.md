@@ -12,13 +12,17 @@ The project involves several stages including data preprocessing, feature aggreg
 **Data Preprocessing:** Handles missing values, categorical variable encoding, and scaling.
 **Feature Aggregation:** Aggregates features to create meaningful inputs for the model.
 **Model Building:** Utilizes XGBoost for high performance and accuracy in predictions.
+
 **Real-Time Predictions:** Supports real-time predictions through a web interface.
+
 **Deployment:** Easy deployment using Flask and Django frameworks.
 
 **How to Use**
 
 **Preprocess Data**: Run the data preprocessing script to clean and prepare the dataset.
+
 **Train Model**: Execute the training script to build the model.
+
 **Make Predictions**: Use the provided interface to make predictions on new data.
 
 **About the Model**
@@ -28,6 +32,7 @@ The model used in this project is XGBoost, a powerful and efficient implementati
 **Project URL:**
 The flask and Django application was deployed using render.com and click on the below link 
 to view our project:
+
 **Using Flask Churn Prediction** (https://telecom-79j7.onrender.com/)
 
 **Using Django Churn Prediction** (https://telecom-1-ibrd.onrender.com/)
