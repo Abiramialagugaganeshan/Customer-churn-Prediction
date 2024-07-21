@@ -7,7 +7,7 @@ This project aims to predict customer churn using machine learning techniques. C
 
 The project involves several stages including data preprocessing, feature aggregation, model building, and deployment. This documentation will guide through the necessary steps to successfully run and deploy the churn prediction model.
 
-**Core Features**
+# Core Features
 
 **Data Preprocessing:** Handles missing values, categorical variable encoding, and scaling.
 **Feature Aggregation:** Aggregates features to create meaningful inputs for the model.
@@ -17,7 +17,7 @@ The project involves several stages including data preprocessing, feature aggreg
 
 **Deployment:** Easy deployment using Flask and Django frameworks.
 
-**How to Use**
+# How to Use
 
 **Preprocess Data**: Run the data preprocessing script to clean and prepare the dataset.
 
@@ -25,7 +25,7 @@ The project involves several stages including data preprocessing, feature aggreg
 
 **Make Predictions**: Use the provided interface to make predictions on new data.
 
-**About the Model**
+# About the Model
 The model used in this project is XGBoost, a powerful and efficient implementation of the gradient boosting framework. XGBoost is chosen for its speed and performance, especially with large datasets. It provides high accuracy and handles missing data effectively.
 
 # DEPLOYMENT
