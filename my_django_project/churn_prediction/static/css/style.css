@@ -1,0 +1,184 @@
+/* churn_prediction/static/css/style.css */
+
+body {
+    background: linear-gradient(45deg, #587d96, #3F5EFB);
+    height: 120vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .container {
+    background: rgba(255,255,255,0.3);
+    padding: 2em;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    width: 80%; /* Set width to 80% of viewport */
+    max-width: 1000px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+  }
+  
+  form div {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 0.5em;
+  }
+  
+  label_1 {
+    font-size: 1rem;
+    color: #1183b0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 0.5em;
+  }
+  
+  select, input[type="text"] {
+    background: transparent;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: #1c4a7e;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  select:hover, input[type="text"]:hover {
+    background: rgba(20, 120, 178, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="text"]:focus, select:focus {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+    outline: none;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 1em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    color: #fff;
+    background: rgba(12, 85, 94, 0.815);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    grid-column: span 4;
+  }
+  
+  button:hover {
+    background: rgba(6, 152, 224, 0.641);
+  }
+  
+  button:active {
+    background: rgba(255,255,255,0.1);
+  }
+  
+  button:hover {
+    transform: translateY(-2px); /* Optional: Add a subtle lift effect */
+  }
+  
+  ::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  }
+  
+  .result-container {
+    display: none;
+    margin-top: 2em;
+  }
+  
+  .result-container.active {
+    display: block;
+  }
+  
+  .result {
+    background: rgba(255,255,255,0.3);
+    padding: 2em;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    max-width: 1000px;
+    box-sizing: border-box;
+  }
+  
+  .result h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+  }
+  
+  .result p {
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 0.5em;
+  }
+  
+  .result a {
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    margin-top: 1em;
+  }
+  
+  /* Style for churned and not churned predictions */
+  .churned {
+    color: red;
+  }
+  
+  .not-churned {
+    color: green;
+  }
+  
+  @media (max-width: 600px) {
+      form {
+          grid-template-columns: 1fr;
+      }
+  
+      button {
+          grid-column: span 1;
+      }
+  }
+  
